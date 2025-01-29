@@ -9,6 +9,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import User, Message, Sticker, Document
 
+BOT_TOKEN = "7745813306:AAHYtxcESg1hS0Vp-yC7JWMYToHf6D3pWLw"
     
 bughunter0 = Client(
     "Sticker-Bot",
