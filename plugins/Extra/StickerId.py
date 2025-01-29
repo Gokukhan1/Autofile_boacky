@@ -4,7 +4,7 @@ import logging
 import pyrogram
 import time
 import math
-from info import *
+from info import *, BOT_TOKEN
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import User, Message, Sticker, Document
