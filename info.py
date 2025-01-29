@@ -24,13 +24,13 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '238962'))
-API_HASH = environ.get('API_HASH', 'da7e86cf57b0e6220b8a9e0aed228')
-OWNER_ID = environ.get('OWNER_ID', '7008975700')
+API_ID = int(environ.get('API_ID', '21655208'))
+API_HASH = environ.get('API_HASH', '967c1a6159d164191f4d79022d557f92')
+OWNER_ID = environ.get('OWNER_ID', '7745813306')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7745813306:AAHYtxcESg1hS0Vp-yC7JWMYToHf6D3pWLw")
 
 # for eval function, work only in a specific group
-EVAL_ID = environ.get("EVAL_ID", "-1002474007326")
+EVAL_ID = environ.get("EVAL_ID", "-1002186359744")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 99999))
@@ -47,17 +47,17 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/2f7d2f1c5fab
 SP = (environ.get('SP', 'https://graph.org/file/a0c2ab09ea6d665deb174.jpg https://graph.org/file/769aee62c9fbfd58fe7c0.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7008975700 7526369190').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7745813306 7078181502').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7526369190 6497757690 7008975700').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '7745813306 7078181502').split()]
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002474007326')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002354698655')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002262847876')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002376913542')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
@@ -124,7 +124,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001905367057')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002376913542')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
