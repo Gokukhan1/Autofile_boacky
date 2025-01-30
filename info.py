@@ -30,7 +30,7 @@ OWNER_ID = environ.get('OWNER_ID', '7745813306')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7745813306:AAHYtxcESg1hS0Vp-yC7JWMYToHf6D3pWLw")
 
 # for eval function, work only in a specific group
-EVAL_ID = environ.get("EVAL_ID", "-1002186359744")
+EVAL_ID = environ.get("EVAL_ID", "-1002376913542")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 99999))
@@ -56,7 +56,7 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002262847876')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002376913542')
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002376913542')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
@@ -80,7 +80,7 @@ AI = is_enabled((environ.get("AI","True")), True)
 OPENAI_API = environ.get("OPENAI_API", " ")
 DEEP_API = environ.get("DEEP_API", "3ac9b077-654f-45c6-a1f0-a04a5ef6b69e")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
-AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
+AI_LOGS = int(environ.get("AI_LOGS", "-1002376913542")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
