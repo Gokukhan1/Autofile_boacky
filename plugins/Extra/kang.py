@@ -24,14 +24,7 @@ from telegram import ParseMode
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 logger = logging.getLogger()
 
-def getConfig(name: str):
-    return os.environ[name]
-
-try:
-    BOT_TOKEN = getConfig('BOT_TOKEN')
-except KeyError as e:
-    logger.error("BOT_TOKEN env variables missing! Exiting now")
-    exit(1)
+from info import BOT_TOKEN
 
 updater = telegram.ext.Updater(token=BOT_TOKEN)
 bot = updater.bot
